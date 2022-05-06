@@ -1,0 +1,116 @@
+/**/
+.header{grid-area: header;}
+/**/
+.section1{grid-area: main1;}
+.section2{grid-area: main2;}
+.section3{grid-area: main3;}
+.section4{grid-area: main4;}
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .menu a {
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+  }
+  
+  .right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  
+
+/**/
+.aside{grid-area: right;}
+.footer{grid-area: footer;}
+/**/
+.a {
+    display: grid;
+    background-color: #10403B;
+    margin: 5px;
+    padding: 10px 5px;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: #127369;
+    margin: 5px;
+    padding: 10px 5px;
+}
+a{
+    font-size: 1.5em;
+    line-height: 30px;
+    margin: 0px 10px;
+}
+/**/
+a:nth-child(3){
+    grid-column: 6;
+}
+/**/
+article{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 100px ;
+    grid-gap: 10px;
+    margin: 5px;
+    grid-template-areas:
+      'main1 main2 right right'
+      'main3 main4 right right'
+}
+h2 {
+    font-size: 20px;
+    margin: 0 auto;
+}
+p {
+    font-size: 15px;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 20px;
+    margin: 0 auto;
+}
+table {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-spacing : 0;
+    
+}
+section{
+    font-size: 2em;
+    background-color: #BFBFBF;
+    padding: 10px;
+}
+aside{
+    display: grid;
+    font-size: 1em;
+    padding: 10px;
+    width: 300px;
+    background-color: #4C5958;
+}
+footer{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 5px 5px;
+    padding: 10px;
+    background-color: #10403B;
+    text-align: center;
+}
+/**/
